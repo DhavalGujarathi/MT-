@@ -55,7 +55,7 @@ Example file : map1_9_2.dat
 0 1           -----> 'r' lines (ex. initial location of robot 1 is (8,7))
 8 7	
 6             -----> np1 number of coordinates where some proposition is true for robot 1
-0 0 1 7 10 15       -----> 'np' (ex. at (0,0), proposition 1,7,10,15 are true for robot 1)
+0 0 1 7 10 15 -----> 'np' (ex. at (0,0), proposition 1,7,10,15 are true for robot 1)
 8 8 1 8 10 16
 2 4 2 3 9 11
 6 4 2 4 9 12
@@ -81,6 +81,7 @@ Install Spot-2.6 tool for LTL2TGBA converter. Copy the ltl2tgba file from the bi
 This command should give us the Buchi automata transitions for the given query
 
 **6. Basic_Solution.cpp**: Basic Solution algorithm for 2D workspace. This is the Dijkstra's  algorithm based solution to the mentioned problem.
+
 **7. Basic_planner_variable.h** : Helper file for Basic_Solution
 
 ----
