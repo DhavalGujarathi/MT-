@@ -1,5 +1,5 @@
 
-# MT- Multi-Robot Motion Planning with Temporal Goals
+# MT&ast; Multi-Robot Motion Planning with Temporal Goals
 
 ### **Files :**
 **1. query.dat**  : LTL query must be specified in this file.
