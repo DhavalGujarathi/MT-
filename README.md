@@ -7,18 +7,28 @@
 **2. map1_9_2.dat** : 2D workspace descriptor file.
 
 Naming Convention :
+
 mapx_y_z.dat => This is a descriptor file for 2D workspace x, whose size is y times y and for z number of robots.
 
 Input format :
+
 nr - number of rows
+
 nc - number of columns
+
 nobs - no of obstacles
+
 nobs coordinates - 'nobs' lines  mentioning the co-ordinates of the obstacles
+
 r - number of robots
+
 r coordinates - 'r' lines mentioning the initial locations of 'r' robots
+
 npx - no of coordinates where a certain proposition is true for robot x
+
 np coordinates - 'npx' lines mentioning the coordinates and the propositions true at it this co-ordinate for robot x.
 (above two fields are repeated for r robots)
+
 Example file : map1_9_2.dat
 <pre>	
 9            -----> nr
@@ -77,7 +87,9 @@ Multiples workspace descriptor files are present in Maps folder. Copy and paste 
 
 **5. ltl2tgba** : LTL to Buchi Automaton converter binary file. 
 Install Spot-2.6 tool for LTL2TGBA converter. Copy the ltl2tgba file from the bin folder of spot installation and copy it to the current folder. Check if the tool is working by running following command in the current folder using the command line:
+
 ./ltl2tgba \--spin ' [ ] (<>p && <>q) '
+
 This command should give us the Buchi automata transitions for the given query
 
 **6. Basic_Solution.cpp**: Basic Solution algorithm for 2D workspace. This is the Dijkstra's  algorithm based solution to the mentioned problem.
@@ -89,7 +101,9 @@ This command should give us the Buchi automata transitions for the given query
 
 **Compile**:  Compile Basic_Solution.cpp and MT_star.cpp using g++ command with flag -std=c++11 to generate the binaries djk and MT_star(on Ubuntu OS) . 
 For example -
+
 g++ -std=c++11 Basic_Solution.cpp -o djk
+
 g++ -std=c++11 MT_star.cpp -o MT_star
 
 **Execute**:  Execute the generated binaries using the following commands
