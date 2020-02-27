@@ -107,7 +107,9 @@ g++ -std=c++11 Basic_Solution.cpp -o djk
 g++ -std=c++11 MT_star.cpp -o MT_star
 
 **Execute**:  Execute the generated binaries using the following commands
+
 ./djk map1_9_2.dat
+
 ./MT_star map1_9_2.dat
 
 ------------
